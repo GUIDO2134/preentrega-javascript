@@ -44,6 +44,5 @@ function adivinarNumero() {
     adivinarNumero();
   }
 }
-
 // Iniciar el juego
 adivinarNumero();
