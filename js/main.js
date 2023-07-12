@@ -1,10 +1,10 @@
 //alert()
 /* variables
-    let
-    const
+    let ESTA
+    const ESTA
 
     condicionales
-    if
+    if ESTA
     swich
 
     ciclos
@@ -12,40 +12,38 @@
     while
 
     funciones
-       funciones propias de java
-       funciuones cradas pro nosotros
+       funciones propias de java ESTA
+       funciuones cradas pro nosotros ESTA
 */
 
+
+
 // Generar un número aleatorio entre 1 y 100
-const numeroSecreto = Math.floor(Math.random() * 100) + 1;
-let intentos = 0;
+const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 
-// Función para comparar el número ingresado por el jugador con el número secreto
-function adivinarNumero() {
-  // Obtener el número ingresado por el jugador
-  const numeroIngresado = parseInt(prompt("Adivina el número (entre 1 y 100):"));
+// Función principal del juego
+function jugarAdivinanza() {
+  let intentos = 0;
+  let numeroUsuario = 0;
 
-  // Verificar si el número ingresado es válido
-  if (isNaN(numeroIngresado)) {
-    alert("Por favor, ingresa un número válido.");
-    return;
-  }
+  while (numeroUsuario !== numeroAleatorio) {
+    numeroUsuario = parseInt(prompt("Adivina el número (entre 1 y 100):"));
 
-  // Incrementar el contador de intentos
-  intentos++;
-
-  // Verificar si el jugador adivinó el número
-  if (numeroIngresado === numeroSecreto) {
-    alert(`¡Felicidades! Adivinaste el número en ${intentos} intentos.`);
-  } else if (numeroIngresado < numeroSecreto) {
-    alert("El número secreto es mayor. Intenta nuevamente.");
-    adivinarNumero();
-  } else {
-    alert("El número secreto es menor. Intenta nuevamente.");
-    adivinarNumero();
+    if (isNaN(numeroUsuario)) {
+      alert("Ingresa un número válido.");
+    } else {
+      intentos++;
+      if (numeroUsuario < numeroAleatorio) {
+        alert("El número es mayor. Intenta nuevamente.");
+      } else if (numeroUsuario > numeroAleatorio) {
+        alert("El número es menor. Intenta nuevamente.");
+      } else {
+        alert(`¡Felicidades! Adivinaste el número en ${intentos} intentos.`);
+      }
+    }
   }
 }
 function comenzar(){
-// Iniciar el juego
-adivinarNumero();
+// Llamar a la función para iniciar el juego
+jugarAdivinanza();
 }
