@@ -7,7 +7,7 @@
     if ESTA
     swich
 
-    ciclos
+    ciclos ESTA
     for
     while
 
@@ -15,9 +15,7 @@
        funciones propias de java ESTA
        funciuones cradas pro nosotros ESTA
 */
-
-
-
+// Función para comparar el número ingresado por el jugador con el número secreto
 // Generar un número aleatorio entre 1 y 100
 const numeroAleatorio = Math.floor(Math.random() * 100) + 1;
 

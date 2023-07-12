@@ -1,10 +1,11 @@
 
 body{
-    background-image: url("/img/f2.jpg");
+    background-image: url("../img/f2.jpg");
     font-family: sans-serif;
+    background-attachment:fixed;
 }
 h1{
-    color: #6876a7;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,7 +14,7 @@ h1{
     font-size: 70px;
 }
 h2{
-    color: #6876a7;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +22,7 @@ h2{
     font-size: 40px;
 }
 h3{
-    color: #6876a7;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,7 +39,7 @@ button {
     background: black;
     cursor: pointer;
     border: none;
-    padding: 16px 32px;
+    padding: 20px 40px;
     color: #fff;
     font-size: 24px;
     font-weight: bold;
