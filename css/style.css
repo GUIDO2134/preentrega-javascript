@@ -1,8 +1,10 @@
+
 body{
-    background: khaki;
+    background-image: url("/img/f2.jpg");
     font-family: sans-serif;
 }
 h1{
+    color: #6876a7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +13,7 @@ h1{
     font-size: 70px;
 }
 h2{
+    color: #6876a7;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,9 +21,59 @@ h2{
     font-size: 40px;
 }
 h3{
+    color: #6876a7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     font-size: 30px;
 }
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button {
+    background: black;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+}
+button::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100%;
+background: linear-gradient(
+    45deg,
+    red,blue,deeppink,blue,red,deeppink,blue
+);
+background-size: 800%;
+border-radius: 10px;
+filter: blur(8px);
+animation: glowing 20s linear infinite
+}
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+    
+}
+
+
+

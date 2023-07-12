@@ -15,6 +15,7 @@
        funciones propias de java
        funciuones cradas pro nosotros
 */
+
 // Generar un número aleatorio entre 1 y 100
 const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 let intentos = 0;
@@ -44,5 +45,7 @@ function adivinarNumero() {
     adivinarNumero();
   }
 }
+function comenzar(){
 // Iniciar el juego
 adivinarNumero();
+}
